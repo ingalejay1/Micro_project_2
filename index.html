@@ -3,82 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Micro Project 2 : Dappr </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius Unicase">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-    <div class="navbar">
-            <ul class="list">
-                <li class="dappr">Dappr</li>
-                <li class="one">Home</li>
-                <li class="one">About</li>
-                <li class="one">Information</li>
-                <li class="one two">More <p class="pointer">^</p></li>
-                <li class="input1"><form action=""><input type="text" placeholder="Search..." ><button><img src="search_icon.png" alt="" class="search_icon"></button></form></li>
-                <li ><img src="Vector.png" alt="" class="vector"></li>
-            </ul>
-    </div>
-   </header>
-   <main>
-    <div class="Box1">
-        <div class="box1"><img src="image 4.png" alt=""></div>
-        <div class="box2">It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a .....</div>
-        <div class="box3">
-            <img src="Whatsapp.png" alt="Whatsapp" class="whatsapp">
-            <img src="facebook.png" alt="facebook" class="facebook">
-            <img src="Twitter.png" alt="Twitter" class="Twitter">
-        </div>
-    </div>
-    <div class="Box2">
-        <div class="One">
-            <ul>
-                <li>Total Question's</li>
-                <li>200,000</li>
-            </ul>
-        </div>
-        <div class="Two">
-            <ul>
-                <li>Toatal Answer's</li>
-                <li>105,000</li>
-            </ul>
-        </div>
-        <div class="Three">
-            <ul>
-                <li>Participated</li>
-                <li>10,000</li>
-            </ul>
-        </div>
-        <div class="Four">
-            <ul>
-                <li>Total Passed</li>
-                <li>6,000</li>
-            </ul>
-        </div>
-    </div>
-    <div class="Box3">
-        <div class="cover">
-            <div class="leftside">
-                <div class="info">YOUR INFO</div>
-                <div class="bookmarks">BOOKMARKS</div>
-                <div class="settings">SETTINGS</div>
-            </div>
-            <div class="rightside">
-             <h1>Your Information</h1>
-             <p><span>Name </span>: Atul Singhal</p>
-             <p><span>Email</span> : atul@gmail.com</p>
-             <p><span>Phone</span> : +91 8131424888</p>
-             <p><span>Marks</span> : 500.00</p>
-             <button class="Button">Next &#8594;</button>
-             <!-- <img src="Group 2.png" alt="" class="Group2"> -->
-            </div>
-            
-        </div>
-    </div>
-   </main>
-   
+    <header>
+        <div class="navbar">
+            <div class="dappr"><p>Dappr</p></div>
 
+            <div class="nav-options">
+                <div class="options"><p>Home</p></div>
+                <div class="options"><p>About Us</p></div>
+                <div class="options"><p>Information</p></div>
+                <div class="options"><p>More&#9013;</p></div>
+            </div>
+
+            <div class="nav-searchbar">
+                <input id="input1" type="text" name="searchbar" placeholder="Search....">
+                <button id="search-icon"><img src="search_icon.png" width="15px" height="15px"></button>
+            </div>
+
+            <div class="nav-menu"><button id="menu-button"><img src="Vector (three lines).png" width="40px" height="30px"></button></div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="all-rows">
+                <div class="first-row">
+                    <div class="first-row-image"><img src="image 4.png" width="350px"></div>
+                    <textarea placeholder="It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a ......"></textarea>
+                </div>
+        
+                <div class="second-row">
+                    <div id="box1"><p>Total Questions<br>200,000</p></div>
+                    <div id="box2"><p>Total Answers<br>105,000</p></div>
+                    <div id="box3"><p>Participated<br>10,000</p></div>
+                    <div id="box4"><p>Total Passed<br>6,000</p></div>
+                </div>
+        
+                <div class="third-row">
+                    <div class="options2">
+                        <button id="button1">YOUR INFO</button>
+                        <button id="button2">BOOKMARKS</button>
+                        <button id="button3">SETTINGS</button>
+                    </div>
+                    <div class="your-information">
+                        <p id="your-info-heading">Your information</p>
+                        <p class="your-info-topic">Name&nbsp;&nbsp; : <span class="your-info-info"> &nbsp;Atul Singhal</span></p>
+                        <p class="your-info-topic">Email&nbsp;&nbsp; : <span class="your-info-info"> &nbsp;atul@gmail.com</span></p>
+                        <p class="your-info-topic">Phone&nbsp; : <span class="your-info-info"> &nbsp;+91 8131424888</span></p>
+                        <p class="your-info-topic">Marks&nbsp; : <span class="your-info-info"> &nbsp;500.00</span></p>
+                        <button id="next-button">Next &#129122;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media-container">
+                <div class="social-media-icons">
+                    <div id="whatsapp"><img src="whatsapp-logo.png" height="50px" width="50px"></div>
+                    <div id="facebook"><img src="facebook-logo.png" height="50px" width="50px"></div>
+                    <div id="twitter"><img src="twitter-logo.png" height="50px" width="50px"></div>
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <div id="help-icon">
+        <img src="help-icon.png" height="120px">
+    </div>
 </body>
 </html>
